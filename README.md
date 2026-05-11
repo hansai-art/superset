@@ -2,7 +2,7 @@
 
 <img width="full" alt="Superset" src="apps/marketing/public/images/readme-hero.png" />
 
-### The Code Editor for AI Agents
+### 給 AI 代理人的程式碼編輯器
 
 [![GitHub stars](https://img.shields.io/github/stars/superset-sh/superset?style=flat&logo=github)](https://github.com/superset-sh/superset/stargazers)
 [![GitHub release](https://img.shields.io/github/v/release/superset-sh/superset?style=flat&logo=github)](https://github.com/superset-sh/superset/releases)
@@ -12,122 +12,131 @@
 
 <br />
 
-Orchestrate swarms of Claude Code, Codex, and more in parallel.<br />
-Works with any CLI agent. Built for local worktree-based development.
+可同時編排多個 Claude Code、Codex 等代理人平行工作。<br />
+相容任何 CLI 代理人，並為本機 worktree 開發流程打造。
 
 <br />
 
-[**Download for macOS**](https://github.com/superset-sh/superset/releases/latest) &nbsp;&bull;&nbsp; [Documentation](https://docs.superset.sh) &nbsp;&bull;&nbsp; [Changelog](https://github.com/superset-sh/superset/releases) &nbsp;&bull;&nbsp; [Discord](https://discord.gg/cZeD9WYcV7)
+[**下載 macOS 版本**](https://github.com/superset-sh/superset/releases/latest) &nbsp;&bull;&nbsp; [文件](https://docs.superset.sh) &nbsp;&bull;&nbsp; [更新日誌](https://github.com/superset-sh/superset/releases) &nbsp;&bull;&nbsp; [Discord](https://discord.gg/cZeD9WYcV7)
 
 <br />
 
 
 </div>
 
-## Code 10x Faster With No Switching Cost
+## 不用切換上下文，也能讓開發速度提升 10 倍
 
-Superset orchestrates CLI-based coding agents across isolated git worktrees, with built-in terminal, review, and open-in-editor workflows.
+Superset 讓你在「隔離的 git worktree」中同時驅動多個 CLI 程式代理人，並內建終端機、差異檢視、快速回編輯器等流程。
 
-- **Run multiple agents simultaneously** without context switching overhead
-- **Isolate each task** in its own git worktree so agents don't interfere with each other
-- **Monitor all your agents** from one place and get notified when they need attention
-- **Review and edit changes quickly** with the built-in diff viewer and editor
-- **Open any workspace where you need it** with one-click handoff to your editor or terminal
+就算你是新手，也可以把它理解成：
 
-Wait less, ship more.
+- 一個代理人 = 一位幫你寫程式的助手
+- 一個 worktree = 一個獨立工作桌，不會互相打架
+- Superset = 你管理所有助手的控制台
 
-## Features
+你可以做到：
 
-| Feature | Description |
+- **同時跑多個代理人**，不用一直切來切去
+- **每個任務各自隔離**，避免改壞彼此的檔案
+- **在同一個地方監控狀態**，代理人需要你時會通知
+- **用內建 diff 快速審查與微調**，減少來回開關工具
+- **一鍵把任務工作區交給編輯器或終端機**，延續你的原本習慣
+
+等待更少，交付更多。
+
+## 功能特色
+
+| 功能 | 說明 |
 |:--------|:------------|
-| **Parallel Execution** | Run 10+ coding agents simultaneously on your machine |
-| **Worktree Isolation** | Each task gets its own branch and working directory |
-| **Agent Monitoring** | Track agent status and get notified when changes are ready |
-| **Built-in Diff Viewer** | Inspect and edit agent changes without leaving the app |
-| **Workspace Presets** | Automate env setup, dependency installation, and more |
-| **Universal Compatibility** | Works with any CLI agent that runs in a terminal |
-| **Quick Context Switching** | Jump between tasks as they need your attention |
-| **IDE Integration** | Open any workspace in your favorite editor with one click |
+| **平行執行（Parallel Execution）** | 在同一台機器同時跑 10 個以上代理人 |
+| **Worktree 隔離（Worktree Isolation）** | 每個任務都有獨立分支與工作目錄 |
+| **代理人監控（Agent Monitoring）** | 追蹤任務狀態，修改完成時可即時得知 |
+| **內建差異檢視（Built-in Diff Viewer）** | 不離開 App 也能檢查、編修代理人的變更 |
+| **工作區預設（Workspace Presets）** | 自動化環境初始化、安裝依賴等步驟 |
+| **通用相容（Universal Compatibility）** | 任何能在終端機運作的 CLI 代理人都可使用 |
+| **快速切換上下文（Quick Context Switching）** | 任務需要你時再進去處理，不被流程綁住 |
+| **IDE 整合（IDE Integration）** | 一鍵在你慣用編輯器打開該工作區 |
 
-## Supported Agents
+## 支援的代理人
 
-Superset works with any CLI-based coding agent, including:
+Superset 支援任何「CLI 型」程式代理人，包含：
 
-| Agent | Status |
+| 代理人 | 狀態 |
 |:------|:-------|
-| [Amp Code](https://ampcode.com/) | Fully supported |
-| [Claude Code](https://github.com/anthropics/claude-code) | Fully supported |
-| [OpenAI Codex CLI](https://github.com/openai/codex) | Fully supported |
-| [Cursor Agent](https://docs.cursor.com/agent) | Fully supported |
-| [Gemini CLI](https://github.com/google-gemini/gemini-cli) | Fully supported |
-| [GitHub Copilot](https://github.com/features/copilot) | Fully supported |
-| [OpenCode](https://github.com/opencode-ai/opencode) | Fully supported |
-| [Pi](https://github.com/badlogic/pi-mono/tree/main/packages/coding-agent) | Fully supported |
-| Any CLI agent | Will work |
+| [Amp Code](https://ampcode.com/) | 完整支援 |
+| [Claude Code](https://github.com/anthropics/claude-code) | 完整支援 |
+| [OpenAI Codex CLI](https://github.com/openai/codex) | 完整支援 |
+| [Cursor Agent](https://docs.cursor.com/agent) | 完整支援 |
+| [Gemini CLI](https://github.com/google-gemini/gemini-cli) | 完整支援 |
+| [GitHub Copilot](https://github.com/features/copilot) | 完整支援 |
+| [OpenCode](https://github.com/opencode-ai/opencode) | 完整支援 |
+| [Pi](https://github.com/badlogic/pi-mono/tree/main/packages/coding-agent) | 完整支援 |
+| 其他 CLI 代理人 | 多半可運作 |
 
-If it runs in a terminal, it runs on Superset
+一句話：只要它能在終端機跑，就能在 Superset 跑。
 
-## Requirements
+## 執行需求
 
-| Requirement | Details |
+| 需求項目 | 說明 |
 |:------------|:--------|
-| **OS** | macOS (Windows/Linux untested) |
+| **作業系統** | macOS（Windows/Linux 尚未完整測試） |
 | **Runtime** | [Bun](https://bun.sh/) v1.0+ |
-| **Version Control** | Git 2.20+ |
+| **版本控制** | Git 2.20+ |
 | **GitHub CLI** | [gh](https://cli.github.com/) |
-| **Caddy** | [caddy](https://caddyserver.com/docs/install) (for dev server) |
+| **Caddy** | [caddy](https://caddyserver.com/docs/install)（開發伺服器需要） |
 
-## Getting Started
+## 快速開始
 
-### Quick Start (Pre-built)
+### 方式一：直接下載（最推薦新手）
 
-**[Download Superset for macOS](https://github.com/superset-sh/superset/releases/latest)**
+**[下載 Superset for macOS](https://github.com/superset-sh/superset/releases/latest)**
 
-### Build from Source
+### 方式二：從原始碼建置（給想客製化或貢獻程式碼的人）
 
 <details>
-<summary>Click to expand build instructions</summary>
+<summary>點我展開建置步驟</summary>
 
-**1. Clone the repository**
+**1. 複製專案原始碼（clone）**
 
 ```bash
 git clone https://github.com/superset-sh/superset.git
 cd superset
 ```
 
-**2. Set up environment variables** (choose one):
+**2. 設定環境變數**（二選一）
 
-Option A: Full setup
+方案 A：完整設定（正式開發建議）
 ```bash
 cp .env.example .env
-# Edit .env and fill in the values
+# 開啟 .env 並填入對應值
 ```
 
-Option B: Skip env validation (for quick local testing)
+方案 B：略過環境驗證（只想快速本機試跑）
 ```bash
 cp .env.example .env
 echo 'SKIP_ENV_VALIDATION=1' >> .env
 ```
 
-**3. Set up Caddy** (reverse proxy for Electric SQL streams):
+**3. 設定 Caddy**（給 Electric SQL stream 的反向代理）
 
 ```bash
-# Install caddy: brew install caddy (macOS) or see https://caddyserver.com/docs/install
+# 安裝 caddy：macOS 可用 brew install caddy
+# 其他平台請看官方文件：https://caddyserver.com/docs/install
 cp Caddyfile.example Caddyfile
 
-# Without this, Chromium rejects https://localhost:* with ERR_CERT_AUTHORITY_INVALID.
-# Prompts for sudo once.
+# 若不執行這一步，Chromium 可能拒絕 https://localhost:* 憑證（ERR_CERT_AUTHORITY_INVALID）
+# 這一步會要求一次 sudo 權限
 caddy trust
 ```
 
-**4. Install dependencies and run**
+**4. 安裝依賴並啟動開發模式**
 
 ```bash
 bun install
 bun run dev
 ```
 
-**5. Build the desktop app**
+**5. 建置桌面版 App**
 
 ```bash
 bun run build
@@ -136,45 +145,45 @@ open apps/desktop/release
 
 </details>
 
-## Keyboard Shortcuts
+## 鍵盤快捷鍵
 
-All shortcuts are customizable via **Settings > Keyboard Shortcuts** (`⌘/`). See [full documentation](https://docs.superset.sh/keyboard-shortcuts).
+所有快捷鍵都可在 **Settings > Keyboard Shortcuts**（`⌘/`）客製化。更多內容可看[完整文件](https://docs.superset.sh/keyboard-shortcuts)。
 
-### Workspace Navigation
+### 工作區切換
 
-| Shortcut | Action |
+| 快捷鍵 | 動作 |
 |:---------|:-------|
-| `⌘1-9` | Switch to workspace 1-9 |
-| `⌘⌥↑/↓` | Previous/next workspace |
-| `⌘N` | New workspace |
-| `⌘⇧N` | Quick create workspace |
-| `⌘⇧O` | Open project |
+| `⌘1-9` | 切換到第 1～9 個工作區 |
+| `⌘⌥↑/↓` | 上一個／下一個工作區 |
+| `⌘N` | 新增工作區 |
+| `⌘⇧N` | 快速建立工作區 |
+| `⌘⇧O` | 開啟專案 |
 
-### Terminal
+### 終端機
 
-| Shortcut | Action |
+| 快捷鍵 | 動作 |
 |:---------|:-------|
-| `⌘T` | New tab |
-| `⌘W` | Close pane/terminal |
-| `⌘D` | Split right |
-| `⌘⇧D` | Split down |
-| `⌘K` | Clear terminal |
-| `⌘F` | Find in terminal |
-| `⌘⌥←/→` | Previous/next tab |
-| `Ctrl+1-9` | Open preset 1-9 |
+| `⌘T` | 新分頁 |
+| `⌘W` | 關閉窗格／終端機 |
+| `⌘D` | 向右分割 |
+| `⌘⇧D` | 向下分割 |
+| `⌘K` | 清空終端機 |
+| `⌘F` | 在終端機中搜尋 |
+| `⌘⌥←/→` | 上一個／下一個分頁 |
+| `Ctrl+1-9` | 開啟第 1～9 個預設 |
 
-### Layout
+### 版面配置
 
-| Shortcut | Action |
+| 快捷鍵 | 動作 |
 |:---------|:-------|
-| `⌘B` | Toggle workspaces sidebar |
-| `⌘L` | Toggle changes panel |
-| `⌘O` | Open in external app |
-| `⌘⇧C` | Copy path |
+| `⌘B` | 顯示／隱藏工作區側欄 |
+| `⌘L` | 顯示／隱藏變更面板 |
+| `⌘O` | 用外部 App 開啟 |
+| `⌘⇧C` | 複製路徑 |
 
-## Configuration
+## 設定檔（Configuration）
 
-Configure workspace setup and teardown in `.superset/config.json`. See [full documentation](https://docs.superset.sh/setup-teardown-scripts).
+你可以在 `.superset/config.json` 設定建立／刪除工作區時要自動做的事情。詳見[完整文件](https://docs.superset.sh/setup-teardown-scripts)。
 
 ```json
 {
@@ -183,36 +192,36 @@ Configure workspace setup and teardown in `.superset/config.json`. See [full doc
 }
 ```
 
-| Option | Type | Description |
+| 選項 | 型別 | 說明 |
 |:-------|:-----|:------------|
-| `setup` | `string[]` | Commands to run when creating a workspace |
-| `teardown` | `string[]` | Commands to run when deleting a workspace |
+| `setup` | `string[]` | 建立工作區時執行的指令 |
+| `teardown` | `string[]` | 刪除工作區時執行的指令 |
 
-### Example setup script
+### setup 腳本範例
 
 ```bash
 #!/bin/bash
 # .superset/setup.sh
 
-# Copy environment variables
+# 複製環境變數
 cp ../.env .env
 
-# Install dependencies
+# 安裝依賴
 bun install
 
-# Run any other setup tasks
+# 其他初始化工作
 echo "Workspace ready!"
 ```
 
-Scripts have access to environment variables:
-- `SUPERSET_WORKSPACE_NAME` — Name of the workspace
-- `SUPERSET_ROOT_PATH` — Path to the main repository
+腳本可以使用以下環境變數：
+- `SUPERSET_WORKSPACE_NAME` — 工作區名稱
+- `SUPERSET_ROOT_PATH` — 主專案路徑
 
-## Mastra Dependencies
+## Mastra 依賴說明
 
-This repo uses the published upstream `mastracode` and `@mastra/*` packages directly. Avoid adding custom tarball overrides unless there is a repo-specific blocker.
+本專案直接使用官方發布的 `mastracode` 與 `@mastra/*` 套件。除非有專案內特定阻礙，否則請避免加入自製 tarball 覆寫。
 
-## Tech Stack
+## 技術堆疊
 
 <p>
   <a href="https://www.electronjs.org/"><img src="https://img.shields.io/badge/Electron-191970?logo=Electron&logoColor=white" alt="Electron" /></a>
@@ -227,44 +236,34 @@ This repo uses the published upstream `mastracode` and `@mastra/*` packages dire
   <a href="https://trpc.io/"><img src="https://img.shields.io/badge/tRPC-2596BE?logo=trpc&logoColor=white" alt="tRPC" /></a>
 </p>
 
-## Private by Default
+## 預設重視隱私
 
-- **Source Available** — Full source is available on GitHub under Elastic License 2.0 (ELv2).
-- **Explicit Connections** — You choose which agents, providers, and integrations to connect.
+- **Source Available**：完整原始碼依 Elastic License 2.0（ELv2）公開於 GitHub。
+- **Explicit Connections**：你可以自行決定要連哪些代理人、模型供應商與整合服務。
 
-## Contributing
+## 如何貢獻
 
-We welcome contributions! If you have a suggestion that would make Superset better:
+歡迎貢獻！如果你有能讓 Superset 更好的想法：
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+1. Fork 此倉庫
+2. 建立功能分支（`git checkout -b feature/amazing-feature`）
+3. 提交修改（`git commit -m 'Add amazing feature'`）
+4. 推送分支（`git push origin feature/amazing-feature`）
+5. 開啟 Pull Request
 
-You can also [open issues](https://github.com/superset-sh/superset/issues) for bugs or feature requests.
+你也可以在 [issues](https://github.com/superset-sh/superset/issues) 回報 bug 或提出功能建議。
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed instructions and code of conduct.
+更多細節請看 [CONTRIBUTING.md](CONTRIBUTING.md)。
 
 <a href="https://github.com/superset-sh/superset/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=superset-sh/superset" />
 </a>
 
-## Community
+## 社群
 
-Join the Superset community to get help, share feedback, and connect with other users:
+加入 Superset 社群，取得協助、分享回饋並和其他使用者交流：
 
-- **[Discord](https://discord.gg/cZeD9WYcV7)** — Chat with the team and community
-- **[Twitter](https://x.com/superset_sh)** — Follow for updates and announcements
-- **[GitHub Issues](https://github.com/superset-sh/superset/issues)** — Report bugs and request features
-- **[GitHub Discussions](https://github.com/superset-sh/superset/discussions)** — Ask questions and share ideas
-
-### Team
-
-[![Avi Twitter](https://img.shields.io/badge/Avi-@avimakesrobots-555?logo=x)](https://x.com/avimakesrobots)
-[![Kiet Twitter](https://img.shields.io/badge/Kiet-@flyakiet-555?logo=x)](https://x.com/flyakiet)
-[![Satya Twitter](https://img.shields.io/badge/Satya-@saddle__paddle-555?logo=x)](https://x.com/saddle_paddle)
-
-## License
-
-Distributed under the Elastic License 2.0 (ELv2). See [LICENSE.md](LICENSE.md) for more information.
+- **[Discord](https://discord.gg/cZeD9WYcV7)** — 與團隊和社群即時聊天
+- **[Twitter](https://x.com/superset_sh)** — 追蹤最新更新與公告
+- **[GitHub Issues](https://github.com/superset-sh/superset/issues)** — 回報問題與提出功能需求
+- **[GitHub Discussions](https://github.com/superset-sh/superset/discussions)** — 發問、交流想法與用法
